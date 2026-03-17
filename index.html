@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PSMAC Solutions</title>
+
+<style>
+
+/* GENERAL */
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:#f5f7ff;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+nav{
+background:#0d6efd;
+color:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:linear-gradient(135deg,#0d6efd,#00c6ff);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:55px;
+margin:0;
+}
+
+.hero p{
+font-size:22px;
+margin-top:10px;
+}
+
+.btn{
+margin-top:25px;
+padding:14px 35px;
+background:white;
+color:#0d6efd;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* CONTAINER */
+
+.container{
+width:85%;
+margin:auto;
+margin-top:60px;
+}
+
+/* CARDS */
+
+.card{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+margin-bottom:40px;
+}
+
+h2{
+color:#0d6efd;
+margin-bottom:20px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+/* SERVICES */
+
+.service{
+background:#f4f7ff;
+padding:25px;
+border-radius:12px;
+transition:.3s;
+}
+
+.service:hover{
+transform:translateY(-8px);
+}
+
+/* FORM */
+
+form{
+display:flex;
+flex-direction:column;
+gap:10px;
+max-width:400px;
+}
+
+input,textarea{
+padding:12px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:15px;
+}
+
+button{
+padding:12px;
+border:none;
+background:#0d6efd;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:18px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:60px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<h2>PSMAC Solutions</h2>
+
+<div>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#booking">Book Service</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<div class="hero">
+
+<h1>Complete Computer Care Under One Roof</h1>
+
+<p>Fast • Reliable • Affordable IT Solutions</p>
+
+<a class="btn" href="tel:9399190282">Call Now</a>
+
+</div>
+
+
+
+<div class="container">
+
+<!-- ABOUT -->
+
+<div class="card">
+
+<h2>About Us</h2>
+
+<p>
+
+PSMAC Solutions is a trusted computer repair and IT service provider delivering
+high-quality hardware and software solutions for homes and businesses.
+Our mission is to provide fast service, expert support and complete customer satisfaction.
+
+</p>
+
+</div>
+
+
+<!-- SERVICES -->
+
+<div class="card" id="services">
+
+<h2>Our Services</h2>
+
+<div class="grid">
+
+<div class="service">💻 Desktop & Laptop Repair</div>
+
+<div class="service">🛠 Motherboard & Chip-Level Repair</div>
+
+<div class="service">🎮 Custom PC & Gaming Setup</div>
+
+<div class="service">🖨 Printer Installation & Network Setup</div>
+
+<div class="service">💾 Hard Disk & RAM Upgrade</div>
+
+<div class="service">🔐 Data Backup & Recovery</div>
+
+</div>
+
+</div>
+
+
+<!-- WHY CHOOSE US -->
+
+<div class="card">
+
+<h2>Why Choose Us</h2>
+
+<div class="grid">
+
+<div class="service">⚡ Fast Service</div>
+
+<div class="service">💼 Experienced Technicians</div>
+
+<div class="service">💰 Affordable Pricing</div>
+
+<div class="service">⭐ Customer Satisfaction</div>
+
+</div>
+
+</div>
+
+
+<!-- REVIEWS -->
+
+<div class="card">
+
+<h2>Customer Reviews</h2>
+
+<div class="grid">
+
+<div class="service">
+⭐⭐⭐⭐⭐ <br>
+Very fast laptop repair service.
+</div>
+
+<div class="service">
+⭐⭐⭐⭐⭐ <br>
+Best computer service in Indore.
+</div>
+
+<div class="service">
+⭐⭐⭐⭐⭐ <br>
+Affordable and professional work.
+</div>
+
+</div>
+
+</div>
+
+
+<!-- BOOKING -->
+
+<div class="card" id="booking">
+
+<h2>Book a Service</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="text" placeholder="Phone Number">
+
+<textarea placeholder="Describe Your Problem"></textarea>
+
+<button>Book Now</button>
+
+</form>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<div class="card" id="contact">
+
+<h2>Contact Us</h2>
+
+📞 Phone: 9399190282 <br><br>
+
+📧 Email: psmacsolutions@gmail.com <br><br>
+
+📍 Address: LIG Indore, Madhya Pradesh
+
+</div>
+
+
+<!-- MAP -->
+
+<div class="card">
+
+<h2>Our Location</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Indore&output=embed"
+width="100%"
+height="300">
+</iframe>
+
+</div>
+
+</div>
+
+
+<!-- WHATSAPP -->
+
+<a class="whatsapp"
+href="https://wa.me/919399190282"
+target="_blank">
+💬
+</a>
+
+
+<footer>
+
+© 2026 PSMAC Solutions | All Rights Reserved
+
+</footer>
+
+</body>
+</html>
